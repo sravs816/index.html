@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musical Instruments</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://img.pikbest.com/wp/202346/music-notes-isolated-pink-musical-in-3d-rendering_9748270.jpg!w700wp');
+            background-size: cover;
+            background-attachment: fixed; /* Enables parallax effect */
+            background-position: center;
+            animation: moveBackground 10s linear infinite; /* Adds moving effect */
+        }
+
+        @keyframes moveBackground {
+            0% { background-position: center top; }
+            50% { background-position: center center; }
+            100% { background-position: center bottom; }
+        }
+
+        table {
+            width: 90%;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 20px;
+            perspective: 1000px; 
+        }
+
+        td {
+            padding: 15px;
+        }
+
+        .music {
+            position: relative;
+            display: inline-block;
+            width: 350px; /* Increased size */
+            height: 350px; /* Increased size */
+            margin: 15px;
+            overflow: hidden;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+            transform-style: preserve-3d; 
+        }
+
+        .music:hover {
+            transform: rotateY(10deg) scale(1.3); /* Enhanced hover effect */
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .music-title {
+            font-size: 22px;
+            font-weight: bold;
+            color: white;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            width: 90%;
+            text-align: center;
+            padding: 8px 0;
+            border-radius: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        h1 {
+          font-size:75px;
+          color:white;
+          margin-top: 0px;
+          font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+  <h1>Musical Instruments</h1>
+    <table>
+        <tr>
+            <td>
+                <a href="https://youtu.be/NGA6-ny3uqY">
+                    <div class="music">
+                        <img src="https://t4.ftcdn.net/jpg/07/30/25/85/240_F_730258585_RchlwgSQmK3YNMO9SzGVKsVuSCYs0cMp.jpg" alt="Piano">
+                        <div class="music-title">Piano</div>
+                    </div>
+                </a>
+            </td>
+            <td>
+                <a href="https://youtu.be/i8cSyAgo6m0">
+                    <div class="music">
+                        <img src="https://wallpaper.forfun.com/fetch/8d/8dde83c7013e9ba6817324993afbc918.jpeg" alt="Guitar">
+                        <div class="music-title">Guitar</div>
+                    </div>
+                </a>
+            </td>
+            <td>
+                <a href="https://youtu.be/GeoQuopDlEA">
+                    <div class="music">
+                        <img src="https://e0.pxfuel.com/wallpapers/931/419/desktop-wallpaper-violin-iphone-violin-art-thumbnail.jpg" alt="Violin">
+                        <div class="music-title">Violin</div>
+                    </div>
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://youtu.be/MHj9XlV3fFg">
+                    <div class="music">
+                        <img src="https://c4.wallpaperflare.com/wallpaper/910/453/98/fire-flame-skeleton-drum-wallpaper-preview.jpg" alt="Drums">
+                        <div class="music-title">Drums</div>
+                    </div>
+                </a>
+            </td>
+            <td>
+                <a href="https://youtu.be/BvBzQEdUs6E">
+                    <div class="music">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgC4bMFdcufPoMtf-5Q3LHbgSjEwUHEUKXFQ&s" alt="Trumpet">
+                        <div class="music-title">Trumpet</div>
+                    </div>
+                </a>
+            </td>
+            <td>
+                <a href="https://www.youtube.com/shorts/Gf1eL7T7QOo?feature=share">
+                    <div class="music">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo2DR-NzRKVr_idxp7uaQuXfPw46XgBqZb_g&s" alt="Banjo">
+                        <div class="music-title">Banjo</div>
+                    </div>
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://www.youtube.com/shorts/Z1voBW3jsxQ?feature=share">
+                    <div class="music">
+                        <img src="https://i.pinimg.com/originals/fb/3c/13/fb3c1390219fbe5ef05bea0e17da1159.jpg" alt="Flute">
+                        <div class="music-title">Flute</div>
+                    </div>
+                </a>
+            </td>
+            <td>
+                <a href="https://youtu.be/ix-QW-BShPY">
+                    <div class="music">
+                        <img src="https://img.freepik.com/premium-photo/unique-handcrafted-xylophone-made-wood-metal-instrument-is-placed-dark-background-xylophone-has-beautiful-unique-design_14117-263855.jpg" alt="Xylophone">
+                        <div class="music-title">Xylophone</div>
+                    </div>
+                </a>
+            </td>
+            <td>
+                <a href="https://youtu.be/S1-LCnGojnw">
+                    <div class="music">
+                        <img src="https://i.pinimg.com/564x/60/0d/4b/600d4b048c7d71d108df6b1cd050e37c.jpg" alt="Harp">
+                        <div class="music-title">Harp</div>
+                    </div>
+                </a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html> 
